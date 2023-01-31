@@ -1,6 +1,6 @@
 # USAGE
 # python yolo.py --image images/baggage_claim.jpg --yolo yolo-coco
-# import the necessary packages
+# import the necessary packages 
 import numpy as np
 import argparse
 import time
@@ -38,8 +38,8 @@ COLORS = np.random.randint(0, 255, size=(len(LABELS), 3),
 	dtype="uint8")
 
 # derive the paths to the YOLO weights and model configuration
-weightsPath = os.path.sep.join([args["yolo"], "yolov3.weights"])
-configPath = os.path.sep.join([args["yolo"], "yolov3.cfg"])
+weightsPath = os.path.sep.join([args["yolo"], "yolov4.weights"])
+configPath = os.path.sep.join([args["yolo"], "yolov4.cfg"])
 
 # load our YOLO object detector trained on COCO dataset (80 classes)
 print("[INFO] loading YOLO from disk...")
